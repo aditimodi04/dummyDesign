@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/padding_5dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDishName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txtDishCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtDishActualPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAdditionalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/padding_5dp"
+        android:background="@drawable/etxt_bg_lightgrey"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llMinusView"
+            android:layout_width="@dimen/padding_30dp"
+            android:layout_height="@dimen/padding_30dp"
+            android:background="@drawable/minus_bg"
+            android:padding="@dimen/padding_5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imvMinus"
+                android:layout_width="@dimen/padding_15dp"
+                android:layout_height="@dimen/padding_15dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_minus"
+                android:tint="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtItemQty"
+            android:layout_width="@dimen/padding_30dp"
+            android:layout_height="@dimen/padding_30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="@dimen/padding_5dp"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:paddingRight="@dimen/padding_5dp"
+            android:text="Add"
+            android:textColor="@color/green_dark"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <LinearLayout
+            android:id="@+id/llPlusView"
+            android:layout_width="@dimen/padding_30dp"
+            android:layout_height="@dimen/padding_30dp"
+            android:background="@drawable/plus_bg"
+            android:padding="@dimen/padding_5dp">
+
+            <ImageView
+                android:id="@+id/imvPlus"
+                android:layout_width="@dimen/padding_15dp"
+                android:layout_height="@dimen/padding_15dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_plus"
+                android:tint="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
